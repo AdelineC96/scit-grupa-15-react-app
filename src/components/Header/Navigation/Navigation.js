@@ -2,6 +2,10 @@ import React from "react";
 import { NavButton } from "./NavButton";
 
 import "./Navigation.css";
+import "./NavButton.css";
+
+let cssClass = "header-nav-button";
+
 
 export class Navigation extends React.Component {
   state = {
@@ -10,6 +14,8 @@ export class Navigation extends React.Component {
 
   handleButtonClick = (event) => {
     console.log(event.target);
+    this.setState({currentSelectedButton:event.target.id})
+
   };
 
   render() {
