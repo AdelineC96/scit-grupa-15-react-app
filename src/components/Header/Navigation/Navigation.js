@@ -14,7 +14,7 @@ export class Navigation extends React.Component {
 
   handleButtonClick = (event) => {
     console.log(event.target);
-    this.setState({currentSelectedButton:event.target.id})
+    this.setState({currentSelectedButton:event.target.id});
 
   };
 
